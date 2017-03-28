@@ -26,7 +26,7 @@ export class SearchBoxComponent implements OnInit{
 
   }
 
-
+  //modeled from example in ng-book2. - great resource on angular https://www.ng-book.com/2/
   ngOnInit():void{
     Observable.fromEvent(this.el.nativeElement, 'keyup')
       .map((e:any)=> e.target.value)
